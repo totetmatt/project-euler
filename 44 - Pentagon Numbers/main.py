@@ -9,6 +9,3 @@ for r in range(1,10000):
         if P(r) + P(s) in penlist and P(r) - P(s) in penlist :
             print P(r) - P(s)
             exit()
-       
-        
-
