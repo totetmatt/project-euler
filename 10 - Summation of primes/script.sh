@@ -1,0 +1,1 @@
+seq 2000000 |xargs factor |egrep '[0-9]*: [0-9]*$' | awk -F ":" '{ s+=$1}  END { print s }'
