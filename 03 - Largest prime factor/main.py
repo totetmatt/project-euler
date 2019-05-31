@@ -9,6 +9,6 @@ i = int(math.sqrt(number))
 while i:
     if number % i == 0:
         if isPrime(i):
-            print i
-            exit()
+            print(i)
+            break
     i -=1

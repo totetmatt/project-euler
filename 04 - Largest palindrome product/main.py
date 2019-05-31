@@ -1,10 +1,9 @@
 
 m = "0"
-
 for r1 in range(999,99,-1):
     for r2 in range(999,99,-1):
-        p = "%s"%(r1*r2)
-        if p[(len(p)/2):] == p[:len(p)/2][::-1]:
-            if p > m :
+        p = str(r1*r2)
+        if  p == p[::-1]:
+            if int(p) > int(m) :
                 m = p
-print m
+print(m)
